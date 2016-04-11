@@ -22,6 +22,7 @@
           href="../../assets/css/theme-default/libs/bootstrap-datepicker/datepicker3.css?1424887858"/>
     <link type="text/css" rel="stylesheet"
           href="../../assets/css/theme-default/libs/summernote/summernote.css?1425218701"/>
+    <link type="text/css" rel="stylesheet" href="../../assets/css/theme-default/libs/select2/select2.css?1424887856" />
     <!-- END STYLESHEETS -->
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -176,7 +177,23 @@
 
                                     <br/>
 
-                                    <div class="form-group col-lg-4 col-lg-offset-8">
+                                    <div class="form-group col-lg-9">
+                                        <select class="form-control select2-list" data-placeholder="请选择" multiple>
+                                            <optgroup label="联系人">
+                                                <option value="王二">王二</option>
+                                                <option value="李斯">李斯</option>
+                                            </optgroup>
+                                            <optgroup label="群">
+                                                <option value="啦啦啦">啦啦啦</option>
+                                                <option value="大表哥">大表哥</option>
+                                                <option value="埃希">埃希</option>
+                                                <option value="碰碰">碰碰</option>
+                                            </optgroup>
+                                        </select>
+                                        <label>请选择参与的人</label>
+                                    </div>
+
+                                    <div class="form-group col-lg-3">
                                         <div class="input-group input-daterange" id="demo-date">
                                             <div class="input-group-content">
                                                 <input type="text" class="form-control">
@@ -582,8 +599,10 @@
 <script src="../../assets/js/core/source/AppForm.js"></script>
 <script src="../../assets/js/core/source/AppNavSearch.js"></script>
 <script src="../../assets/js/core/source/AppVendor.js"></script>
+<script src="../../assets/js/libs/select2/select2.min.js"></script>
 <script src="../../assets/js/core/demo/Demo.js"></script>
 <script src="../../assets/js/core/demo/DemoPageContacts.js"></script>
+<script src="../../assets/js/core/demo/DemoFormComponents.js"></script>
 <!-- END JAVASCRIPT -->
 
 </body>
