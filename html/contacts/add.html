@@ -136,6 +136,7 @@
 											<ul class="nav nav-tabs tabs-text-contrast tabs-accent" data-toggle="tabs">
 												<li class="active"><a href="#afriends">创建联系人</a></li>
 												<li><a href="#agroup">创建群</a></li>
+												<li><a href="#agroupmember">新添群成员</a></li>
 											</ul>
 										</div><!--end .card-head -->
 										<!-- END FORM TABS -->
@@ -179,7 +180,7 @@
 												</div>
 
 												<div class="form-group">
-													<select class="form-control select2-list" data-placeholder="选择要加入该群的联系人" multiple>
+													<select class="form-control select2-list" data-placeholder="选择联系人" multiple>
 														<optgroup label="联系人列表">
 															<option value="AK">Alaska</option>
 															<option value="HI">Hawaii</option>
@@ -191,6 +192,33 @@
 												<div class="form-group">
 													<textarea name="information2" id="information2" class="form-control" rows="3" placeholder="请输入验证信息"></textarea>
 													<label for="information2">验证信息</label>
+												</div>
+											</div><!--end .tab-pane -->
+
+											<div class="tab-pane" id="agroupmember">
+												<div class="form-group">
+													<select class="form-control select2-list" data-placeholder="选择群" multiple>
+														<optgroup label="群列表">
+															<option value="AK">Alaska</option>
+															<option value="HI">Hawaii</option>
+														</optgroup>
+													</select>
+													<label>群</label>
+												</div>
+
+												<div class="form-group">
+													<select class="form-control select2-list" data-placeholder="选择联系人" multiple>
+														<optgroup label="联系人列表">
+															<option value="AK">Alaska</option>
+															<option value="HI">Hawaii</option>
+														</optgroup>
+													</select>
+													<label>群成员</label>
+												</div>
+
+												<div class="form-group">
+													<textarea name="information2" id="information3" class="form-control" rows="3" placeholder="请输入验证信息"></textarea>
+													<label for="information3">验证信息</label>
 												</div>
 											</div><!--end .tab-pane -->
 										</div><!--end .card-body.tab-content -->
